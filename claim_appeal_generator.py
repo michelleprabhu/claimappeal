@@ -52,14 +52,8 @@ def initialize_agent(api_key):
 # Streamlit UI setup
 st.set_page_config(page_title="Medical Claim Appeal Generator", page_icon="🩺", layout="wide")
 
-# Header with logo
-col1, col2 = st.columns([1, 6])
-with col1:
-    st.image("Mool.png", width=150)
-
-with col2:
-    st.markdown("<h1 style='margin-top: 10px;'>Medical Claim Appeal Generator</h1>", unsafe_allow_html=True)
-
+# Header
+st.markdown("<h1 style='margin-top: 10px;'>Medical Claim Appeal Generator</h1>", unsafe_allow_html=True)
 st.write("Upload medical documents to generate a professional appeal letter.")
 
 # Sidebar for API key input
